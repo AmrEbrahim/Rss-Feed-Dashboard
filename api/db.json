@@ -1,0 +1,14 @@
+{
+  "feeds": [
+    {
+      "URL": "http://feeds.bbci.co.uk/news/world/rss.xml",
+      "Name": "BBC News",
+      "id": 1
+    },
+    {
+      "URL": "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en&x=1571747254.2933",
+      "Name": "Google News",
+      "id": 2
+    }
+  ]
+}
