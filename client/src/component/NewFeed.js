@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Field, reduxForm } from "redux-form";
 import { connect } from "react-redux";
 import { createFeed, fetchFeeds } from "../actions";
-import history from "../history";
 
 class NewFeed extends Component {
   renderError = ({ error, touched }) => {
@@ -25,16 +24,10 @@ class NewFeed extends Component {
   };
   handleSubmit = async formValue => {
     await this.props.createFeed(formValue);
-    const addedFeed = this.props.feeds.filter(
-      feed => feed.URL === formValue.URL
-    );
     document.querySelectorAll(".bg-darkBlue").forEach(div => {
       div.classList.add("bg-babyBlue");
       div.classList.remove("bg-darkBlue");
     });
-    console.log(addedFeed);
-    await history.push("/");
-    history.push(`/rss/${addedFeed[0].id}`);
   };
   render() {
     return (
