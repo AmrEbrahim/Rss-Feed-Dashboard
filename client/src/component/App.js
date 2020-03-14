@@ -11,7 +11,7 @@ import "./colors.css";
 
 const App = () => {
   return (
-    <div className="container">
+    <div className="fluid-container">
       <Router history={history}>
         <div className="row">
           <Sidebar />

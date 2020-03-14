@@ -39,7 +39,7 @@ class Sidebar extends Component {
             {console.log(this.props.feeds)}
             {this.props.feeds.map(feed => (
               <div
-                className="d-flex justify-content-between align-items-center bg-babyBlue mt-1"
+                className="d-flex justify-content-between align-items-center bg-babyBlue mt-1 px-2"
                 key={feed.id}
               >
                 <Link
